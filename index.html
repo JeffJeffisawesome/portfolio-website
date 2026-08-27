@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeffrey Zhu | Software & Data Engineer | UNC-Chapel Hill</title>
+  <meta name="description" content="Portfolio of Jeffrey Zhu - CS & Applied Mathematics at UNC-Chapel Hill. Experienced in Data Engineering, Cryptography (Signal Double-Ratchet), AI Systems, and Full-Stack Development.">
+  <meta name="keywords" content="Jeffrey Zhu, UNC Chapel Hill, Computer Science, Applied Mathematics, Data Engineer, Cryptography, Double Ratchet, FastAPI, Python, Portfolio">
+  <meta name="author" content="Jeffrey Zhu">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 width=%2232%22 height=%2232%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%234B9CD3%22/><text x=%2250%%22 y=%2255%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2216%22 font-weight=%22bold%22 fill=%22white%22>JZ</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Ambient Background Lighting -->
+  <div class="bg-mesh"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Jeffrey Zhu Home">
+        <div class="brand-avatar">JZ</div>
+        <div class="brand-info">
+          <span class="brand-name">Jeffrey Zhu</span>
+          <span class="brand-status">
+            <span class="status-dot"></span>
+            <span>UNC-CH Graduate • Open to Roles</span>
+          </span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects & Demos</a></li>
+          <li><a href="#academics" class="nav-link">Academics</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme">
+          <span id="theme-toggle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="mailto:jeffjeffisawesome@gmail.com" class="btn btn-primary btn-sm">
+          <span>Get in Touch</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#experience" class="mobile-nav-link">Work Experience</a>
+      <a href="#projects" class="mobile-nav-link">Projects & Live Demos</a>
+      <a href="#academics" class="mobile-nav-link">Academics & Coursework</a>
+      <a href="#skills" class="mobile-nav-link">Skills & Tools</a>
+      <a href="#contact" class="mobile-nav-link">Contact & Links</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-row">
+          <span class="hero-badge highlight">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            UNC-Chapel Hill B.S. CS & Applied Math
+          </span>
+          <span class="hero-badge">
+            <span class="badge badge-emerald">GPA: 3.86 / 4.0</span>
+            Dean's List
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Jeffrey Zhu</span>.
+        </h1>
+
+        <p class="hero-role">
+          Software & Data Engineer • Cryptography & AI Enthusiast
+        </p>
+
+        <p class="hero-bio">
+          I build high-scale data engineering pipelines, implement resilient cryptographic protocols like Signal's Double-Ratchet, and develop intelligent full-stack AI applications with FastAPI and modern frontend frameworks.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects & Demos</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#experience" class="btn btn-secondary">
+            <span>View Experience</span>
+          </a>
+          <button class="btn btn-outline copy-email-btn" title="Click to copy email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <div class="hero-social-links">
+          <a href="https://github.com/JeffJeffisawesome" target="_blank" rel="noopener noreferrer" class="social-link-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/jeffrey-zhu-ba7523266/" target="_blank" rel="noopener noreferrer" class="social-link-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:jeffjeffisawesome@gmail.com" class="social-link-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>jeffjeffisawesome@gmail.com</span>
+          </a>
+          <span class="social-link-item" style="cursor: default;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Chapel Hill, NC</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Profile Card -->
+      <div class="hero-visual">
+        <div class="hero-profile-card">
+          <div class="profile-card-header">
+            <div class="profile-badge-pill">
+              <span class="status-dot"></span>
+              <span>UNC-CH Alumnus</span>
+            </div>
+            <span class="badge badge-carolina">B.S. CS & Applied Math</span>
+          </div>
+          
+          <div class="profile-card-body">
+            <div class="profile-stat-box">
+              <div class="stat-mini-label">Academic Distinction</div>
+              <div class="stat-mini-val">3.86 GPA • Dean's List Honors</div>
+            </div>
+
+            <div class="profile-focus-list">
+              <div class="focus-item">
+                <div class="focus-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div>
+                  <div class="focus-title">Data Engineering & ETL</div>
+                  <div class="focus-sub">UNC School of Medicine IT (Millions of records)</div>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div>
+                  <div class="focus-title">Cryptography & Protocol Security</div>
+                  <div class="focus-sub">Signal Double-Ratchet & Forward Secrecy</div>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <div>
+                  <div class="focus-title">AI & Full-Stack Systems</div>
+                  <div class="focus-sub">FastAPI, Red Hat Pods, Angular & OpenAI</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card-footer">
+              <span class="skill-mini-tag">Python</span>
+              <span class="skill-mini-tag">Java</span>
+              <span class="skill-mini-tag">C</span>
+              <span class="skill-mini-tag">TypeScript</span>
+              <span class="skill-mini-tag">SQL</span>
+              <span class="skill-mini-tag">Informatica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Work Experience & Leadership Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Work Experience & Leadership</h2>
+        <p class="section-subtitle">Delivering data engineering solutions in healthcare IT and empowering undergraduate students in advanced mathematical concepts.</p>
+      </div>
+
+      <div class="experience-timeline">
+        <!-- Experience 1: UNC School of Medicine IT -->
+        <div class="exp-item">
+          <div class="exp-marker">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Data Engineer Intern</h3>
+                <div class="exp-company">UNC School of Medicine IT</div>
+              </div>
+              <div class="exp-date">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>June 2024 – April 2025</span>
+              </div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Developed production ETL workflows using <strong>Informatica</strong> and <strong>SQL Server</strong> to extract and transform datasets containing hundreds of thousands of records, delivering critical insights through 3 executive Tableau decision-making dashboards.</li>
+              <li>Engineered robust <strong>Python</strong> automation scripts to ingest and process large-scale <strong>PubMed</strong> baseline datasets containing millions of records, featuring data cleansing, API extraction, validation, and automated database updates via FTP.</li>
+            </ul>
+
+            <div class="project-tech-stack" style="margin-bottom: 0.75rem;">
+              <span class="tech-tag">Informatica</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tableau</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">FTP Pipelines</span>
+              <span class="tech-tag">Data Cleaning</span>
+            </div>
+
+            <!-- Interactive ETL Architecture Flow -->
+            <div class="etl-pipeline-box">
+              <div class="etl-pipeline-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span>Interactive Pipeline Architecture (Click stages below)</span>
+              </div>
+              <div class="etl-stages-flow">
+                <div class="etl-stage-card active" data-stage="1">
+                  <div class="stage-step-num">STAGE 01</div>
+                  <div class="stage-name">Ingestion</div>
+                  <div class="stage-tech">Python / FTP / APIs</div>
+                </div>
+                <div class="etl-stage-card" data-stage="2">
+                  <div class="stage-step-num">STAGE 02</div>
+                  <div class="stage-name">Cleansing</div>
+                  <div class="stage-tech">Validation / Parsing</div>
+                </div>
+                <div class="etl-stage-card" data-stage="3">
+                  <div class="stage-step-num">STAGE 03</div>
+                  <div class="stage-name">Warehouse</div>
+                  <div class="stage-tech">Informatica / SQL Server</div>
+                </div>
+                <div class="etl-stage-card" data-stage="4">
+                  <div class="stage-step-num">STAGE 04</div>
+                  <div class="stage-name">Analytics</div>
+                  <div class="stage-tech">3 Tableau Dashboards</div>
+                </div>
+              </div>
+              <div id="etl-details-text" class="etl-stage-details-panel">
+                <strong>Step 1: Automated Extraction & FTP Ingestion:</strong> Python ingestion scripts execute scheduled jobs to query external REST APIs and download millions of PubMed XML/JSON baseline records via automated FTP endpoints.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Math Undergraduate Learning Assistant -->
+        <div class="exp-item">
+          <div class="exp-marker">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Math Undergraduate Learning Assistant (ULA)</h3>
+                <div class="exp-company">University of North Carolina at Chapel Hill</div>
+              </div>
+              <div class="exp-date">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>UNC Math Department</span>
+              </div>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Assisted UNC professors by helping students in lectures and recitations, breaking down complex proofs and mathematical concepts.</li>
+              <li>Held weekly office hours and problem-solving workshops for students seeking supplementary help across Linear Algebra, Discrete Mathematics, and Calculus.</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Linear Algebra</span>
+              <span class="tech-tag">Discrete Math</span>
+              <span class="tech-tag">Calculus</span>
+              <span class="tech-tag">Mentorship</span>
+              <span class="tech-tag">Pedagogy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects & Live Interactive Demos -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Engineering Showcase</span>
+        <h2 class="section-title">Featured Projects & Live Demos</h2>
+        <p class="section-subtitle">Hands-on implementations in cryptography, AI agents, microservices, and static documentation platforms.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Double-Ratchet Encrypted Messenger Backend -->
+        <article class="project-card featured-crypto">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="badge badge-carolina">Cryptography & Protocol Security</span>
+                <a href="https://github.com/JeffJeffisawesome" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Source Repository">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repo</span>
+                </a>
+              </div>
+              <h3 class="project-title">Backend of Double-Ratcheted E2E Encrypted Messenger</h3>
+              <p class="project-subtitle">Signal Protocol Implementation • Forward Secrecy & Post-Compromise Security</p>
+              
+              <p class="project-description">
+                Engineered the cryptographic backend for an end-to-end encrypted messaging engine utilizing Signal's Double-Ratchet Algorithm (Diffie-Hellman ratchet combined with symmetric KDF chains).
+              </p>
+
+              <ul class="project-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Forward Secrecy:</strong> Each message derives a unique ephemeral key from a one-way KDF chain; compromised keys cannot decrypt past messages.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Post-Compromise Security:</strong> A continuous Diffie-Hellman ratchet step immediately re-keys the session on subsequent messages, automatically healing compromised state.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Cryptography</span>
+                <span class="tech-tag">Signal Protocol</span>
+                <span class="tech-tag">Diffie-Hellman</span>
+                <span class="tech-tag">KDF Chains</span>
+                <span class="tech-tag">HMAC-SHA256</span>
+              </div>
+              
+              <div class="project-footer-actions">
+                <button class="btn btn-outline btn-sm" data-modal-target="modal-crypto">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Protocol Architecture Deep-Dive</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Double-Ratchet Visualizer Widget -->
+          <div class="project-preview-panel">
+            <div class="preview-panel-header">
+              <span class="preview-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                Live Double-Ratchet Simulator
+              </span>
+              <span class="badge badge-emerald">Interactive</span>
+            </div>
+
+            <div class="preview-interactive-body">
+              <div class="crypto-sim-box">
+                <div class="crypto-nodes-grid">
+                  <div class="crypto-node">
+                    <div class="node-name">Alice (Sender)</div>
+                    <div id="alice-dh-key" class="node-key-display">DH_A1 (0x8F3A)</div>
+                  </div>
+                  <div class="crypto-arrow-center">
+                    <span>⇄ DH Ratchet ⇄</span>
+                  </div>
+                  <div class="crypto-node">
+                    <div class="node-name">Bob (Receiver)</div>
+                    <div id="bob-dh-key" class="node-key-display">DH_B1 (0x4E19)</div>
+                  </div>
+                </div>
+
+                <div class="crypto-ratchet-states">
+                  <div class="state-row">
+                    <span class="state-label">Root Key (KDF_RK):</span>
+                    <span id="root-key-val" class="state-val">0x9B22...C01A</span>
+                  </div>
+                  <div class="state-row">
+                    <span class="state-label">Ciphertext Stream:</span>
+                    <span id="cipher-val" class="state-val" style="color: var(--carolina-blue-light); font-size: 0.68rem;">7f9a2b0c99ef4128...</span>
+                  </div>
+                </div>
+
+                <div class="crypto-controls">
+                  <button id="ratchet-send-btn" class="btn btn-primary btn-sm" style="flex: 1;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    Send Step (Alice → Bob)
+                  </button>
+                  <button id="ratchet-compromise-btn" class="btn btn-secondary btn-sm" title="Simulate ephemeral key leak">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    Leak Key
+                  </button>
+                  <button id="ratchet-reset-btn" class="btn btn-secondary btn-sm" title="Reset Simulation">
+                    ↺
+                  </button>
+                </div>
+
+                <div id="ratchet-log-box" class="crypto-log">
+                  <div>[Init] Ready for ratchet execution.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: OpenAI Integrated Study Tool (CSXL) -->
+        <article class="project-card featured-ai">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="badge badge-purple">AI Agents & Microservices</span>
+                <a href="https://github.com/JeffJeffisawesome" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Source Repository">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>Repo</span>
+                </a>
+              </div>
+              <h3 class="project-title">OpenAI Integrated Study Tool for CSXL</h3>
+              <p class="project-subtitle">AI "Study Buddy" Agent • FastAPI, Red Hat Pods & Angular</p>
+              
+              <p class="project-description">
+                Collaborated in an agile team to build and integrate the "Study Buddy" AI Agent for UNC students. Instructors upload study guides and topics via natural language, which are indexed into a SQL database. Students can then ask questions in natural language to receive guided Socratic assistance.
+              </p>
+
+              <ul class="project-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>FastAPI & Red Hat Pods:</strong> High-performance backend microservice architecture with containerized deployment and automated PyTest suites.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Prompt Engineering & Security:</strong> Crafted prompt templates preventing hallucination and ensuring pedagogical Socratic responses with user authentication.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">Red Hat Pods</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">PyTest</span>
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Authentication</span>
+              </div>
+
+              <div class="project-footer-actions">
+                <button class="btn btn-outline btn-sm" data-modal-target="modal-ai">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>System Architecture Deep-Dive</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive CSXL AI Study Buddy Simulation Widget -->
+          <div class="project-preview-panel">
+            <div class="preview-panel-header">
+              <span class="preview-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Study Buddy Interactive Sandbox
+              </span>
+              <span class="badge badge-purple">FastAPI / AI</span>
+            </div>
+
+            <div class="preview-interactive-body">
+              <div class="ai-sim-box">
+                <div class="ai-course-selector">
+                  <span class="course-pill active" data-course="COMP 423">COMP 423 (Software Eng)</span>
+                  <span class="course-pill" data-course="COMP 550">COMP 550 (Algorithms)</span>
+                  <span class="course-pill" data-course="MATH 381">MATH 381 (Discrete Math)</span>
+                </div>
+
+                <div id="ai-chat-box" class="ai-chat-display">
+                  <div class="chat-bubble ai">
+                    Hello! I'm your <strong>Study Buddy</strong> for <code>COMP 423</code>. Ask me about FastAPI dependency injection, PyTest fixtures, or Red Hat Pod orchestration!
+                  </div>
+                </div>
+
+                <div class="ai-sim-input-row">
+                  <input type="text" id="ai-query-input" class="ai-sim-input" placeholder="e.g. How does FastAPI dependency injection work?">
+                  <button id="ai-send-btn" class="btn btn-primary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: COMP 423 Note-taking Website -->
+        <article class="project-card featured-docs">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="badge badge-emerald">Static Site & CI/CD</span>
+                <div style="display: flex; gap: 0.5rem;">
+                  <a href="https://github.com/JeffJeffisawesome" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>Repo</span>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">COMP 423 Course Notes Platform</h3>
+              <p class="project-subtitle">Foundations of Software Engineering Documentation • Material for MkDocs</p>
+              
+              <p class="project-description">
+                Engineered and maintained a fast, search-indexed static documentation platform containing comprehensive lecture notes and architectural breakdowns for COMP 423 (Foundations of Software Engineering).
+              </p>
+
+              <ul class="project-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Automated CI/CD deployment pipeline via <strong>GitHub Actions</strong> to compile Markdown sources and publish live to <strong>GitHub Pages</strong>.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Rich code highlighting, search indices, and accessible technical documentation formatting.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Material for MkDocs</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">GitHub Pages</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">Markdown</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Documentation CI/CD Pipeline Visual -->
+          <div class="project-preview-panel">
+            <div class="preview-panel-header">
+              <span class="preview-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                CI/CD Automated Deployment
+              </span>
+              <span class="badge badge-emerald">GitHub Actions</span>
+            </div>
+
+            <div class="preview-interactive-body">
+              <div style="background: var(--bg-primary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); font-family: var(--font-mono); font-size: 0.78rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--text-muted);">Trigger:</span>
+                  <span style="color: var(--accent-cyan);">push to main</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--text-muted);">Runner:</span>
+                  <span style="color: var(--text-primary);">ubuntu-latest</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--text-muted);">Step 1:</span>
+                  <span style="color: var(--accent-emerald);">✔ pip install mkdocs-material</span>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <span style="color: var(--text-muted);">Step 2:</span>
+                  <span style="color: var(--accent-emerald);">✔ mkdocs gh-deploy --force</span>
+                </div>
+                <div style="padding: 0.4rem; background: var(--bg-secondary); border-radius: 4px; color: var(--accent-emerald); text-align: center; font-weight: 600;">
+                  🚀 Deployed to GitHub Pages
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics & Coursework Section -->
+  <section id="academics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Education & Rigor</span>
+        <h2 class="section-title">Academic Background & Coursework</h2>
+        <p class="section-subtitle">Dual-discipline curriculum bridging rigorous theoretical mathematics with systems software engineering.</p>
+      </div>
+
+      <div class="academics-card">
+        <div class="academic-profile-header">
+          <div class="unc-branding">
+            <div class="unc-seal-badge">UNC</div>
+            <div>
+              <h3 class="unc-title">University of North Carolina at Chapel Hill</h3>
+              <div class="unc-degree">B.S. in Computer Science & Applied Mathematics</div>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Aug 2022 – Dec 2025 • Graduated • Chapel Hill, NC</p>
+            </div>
+          </div>
+
+          <div class="gpa-card">
+            <div class="gpa-score">3.86</div>
+            <div class="gpa-label">Cumulative GPA / 4.0</div>
+            <span class="badge badge-carolina" style="margin-top: 0.35rem;">UNC-CH Dean's List</span>
+          </div>
+        </div>
+
+        <!-- Coursework Filter Matrix -->
+        <div class="coursework-filter-bar">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-right: 0.5rem;">Filter Coursework:</span>
+          <button class="course-filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="course-filter-btn" data-filter="cs">Computer Science</button>
+          <button class="course-filter-btn" data-filter="math">Applied Mathematics</button>
+          <button class="course-filter-btn" data-filter="systems">Systems & Security</button>
+        </div>
+
+        <div class="courses-grid">
+          <!-- CS Courses -->
+          <div class="course-item" data-category="cs" data-subcat="systems">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-carolina">Security</span>
+            </div>
+            <div class="course-name">Cryptography</div>
+            <div class="course-focus">Ciphers, Diffie-Hellman key exchanges, RSA, zero-knowledge, elliptic curves, and cryptanalysis.</div>
+          </div>
+
+          <div class="course-item" data-category="cs" data-subcat="systems">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-carolina">Core</span>
+            </div>
+            <div class="course-name">Operating Systems</div>
+            <div class="course-focus">Process scheduling, concurrency, virtual memory, synchronization primitives, file systems.</div>
+          </div>
+
+          <div class="course-item" data-category="cs" data-subcat="systems">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-carolina">Low-Level</span>
+            </div>
+            <div class="course-name">Computer Organization</div>
+            <div class="course-focus">Assembly architecture, memory hierarchies, pipelining, logic design, hardware interfaces.</div>
+          </div>
+
+          <div class="course-item" data-category="cs">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-purple">Theory</span>
+            </div>
+            <div class="course-name">Algorithms and Analysis</div>
+            <div class="course-focus">Greedy algorithms, dynamic programming, graph theory, amortized bounds, NP-completeness.</div>
+          </div>
+
+          <div class="course-item" data-category="cs">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-purple">AI / ML</span>
+            </div>
+            <div class="course-name">Intro to Machine Learning</div>
+            <div class="course-focus">Supervised/unsupervised models, gradient descent optimization, neural networks, loss functions.</div>
+          </div>
+
+          <div class="course-item" data-category="cs">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-emerald">Software Eng</span>
+            </div>
+            <div class="course-name">Foundations of Software Engineering</div>
+            <div class="course-focus">Full-stack agile engineering, microservices, REST APIs, CI/CD, test-driven development.</div>
+          </div>
+
+          <div class="course-item" data-category="cs" data-subcat="systems">
+            <div class="course-item-header">
+              <span class="course-dept dept-cs">Computer Science</span>
+              <span class="badge badge-emerald">Data Systems</span>
+            </div>
+            <div class="course-name">Files and Databases</div>
+            <div class="course-focus">Relational schema design, SQL optimization, B-Trees, transaction concurrency & ACID properties.</div>
+          </div>
+
+          <!-- Mathematics Courses -->
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Foundations</span>
+            </div>
+            <div class="course-name">Linear Algebra</div>
+            <div class="course-focus">Vector spaces, eigenspaces, singular value decomposition (SVD), linear transformations, matrix factorizations.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Discrete</span>
+            </div>
+            <div class="course-name">Discrete Mathematics</div>
+            <div class="course-focus">Proof techniques, graph theory, recurrence relations, modular arithmetic, set theory.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Analysis</span>
+            </div>
+            <div class="course-name">Differential Equations</div>
+            <div class="course-focus">ODEs, Laplace transforms, nonlinear systems, stability analysis, physical modeling.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Computational</span>
+            </div>
+            <div class="course-name">Numerical Analysis</div>
+            <div class="course-focus">Root-finding algorithms, numerical integration/differentiation, error propagation, matrix algorithms.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Complex</span>
+            </div>
+            <div class="course-name">Complex Analysis</div>
+            <div class="course-focus">Holomorphic functions, contour integration, Cauchy's integral formula, residue theorem.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Discrete</span>
+            </div>
+            <div class="course-name">Combinatorial Mathematics</div>
+            <div class="course-focus">Generating functions, Polya counting, Ramsey theory, inclusion-exclusion, combinatorial designs.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Applied</span>
+            </div>
+            <div class="course-name">Mathematical Methods for Physical Sciences</div>
+            <div class="course-focus">Fourier series, PDEs, boundary value problems, vector calculus, physical dynamics.</div>
+          </div>
+
+          <div class="course-item" data-category="math">
+            <div class="course-item-header">
+              <span class="course-dept dept-math">Applied Math</span>
+              <span class="badge badge-purple">Fluid Dynamics</span>
+            </div>
+            <div class="course-name">Intro to Fluid Mechanics</div>
+            <div class="course-focus">Navier-Stokes equations, continuum mechanics, vorticity, laminar and turbulent flow modeling.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Technologies Matrix -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Proficiency</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Languages, backend frameworks, data engineering tools, and engineering workflows.</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Live Search Bar -->
+        <div class="skills-search-bar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted);">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="skill-search-input" placeholder="Filter skills (e.g. Python, Docker, SQL, FastAPI, Cryptography)...">
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skills-badge-list">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">C#</span>
+              <span class="skill-pill">HTML / CSS</span>
+              <span class="skill-pill">MATLAB</span>
+              <span class="skill-pill">Unity</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="skill-cat-title">Backend & Web Frameworks</h3>
+            </div>
+            <div class="skills-badge-list">
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">PyTest</span>
+              <span class="skill-pill">Material for MkDocs</span>
+              <span class="skill-pill">Authentication (OAuth2/JWT)</span>
+            </div>
+          </div>
+
+          <!-- Data & Infrastructure -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Data & Cloud Infrastructure</h3>
+            </div>
+            <div class="skills-badge-list">
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">Red Hat Pods</span>
+              <span class="skill-pill">Informatica</span>
+              <span class="skill-pill">SQL Server</span>
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">Git & GitHub</span>
+              <span class="skill-pill">GitHub Actions CI/CD</span>
+              <span class="skill-pill">FTP Automation</span>
+            </div>
+          </div>
+
+          <!-- Domains & Methodologies -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              </div>
+              <h3 class="skill-cat-title">Core Domains & Practices</h3>
+            </div>
+            <div class="skills-badge-list">
+              <span class="skill-pill">Double-Ratchet Cryptography</span>
+              <span class="skill-pill">ETL Pipeline Engineering</span>
+              <span class="skill-pill">AI Prompting & LLM Integration</span>
+              <span class="skill-pill">Agile / Scrum Methodologies</span>
+              <span class="skill-pill">Code Tracing & Debugging</span>
+              <span class="skill-pill">Technical Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Interested in collaborating or discussing full-time software and data engineering opportunities? Feel free to reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Channels -->
+        <div class="contact-info-card">
+          <div>
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Contact Information</h3>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Feel free to send an email, connect on LinkedIn, or inspect my repositories on GitHub.
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel-item">
+                <div class="contact-left">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">Email</div>
+                    <div class="contact-detail-value">jeffjeffisawesome@gmail.com</div>
+                  </div>
+                </div>
+                <button class="btn btn-secondary btn-sm copy-email-btn" title="Copy email address">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="contact-left">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">Phone</div>
+                    <div class="contact-detail-value">(919) 951-8418</div>
+                  </div>
+                </div>
+                <a href="tel:9199518418" class="btn btn-secondary btn-sm">
+                  <span>Call</span>
+                </a>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="contact-left">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">LinkedIn</div>
+                    <div class="contact-detail-value">linkedin.com/in/jeffrey-zhu-ba7523266</div>
+                  </div>
+                </div>
+                <a href="https://www.linkedin.com/in/jeffrey-zhu-ba7523266/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>View</span>
+                </a>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="contact-left">
+                  <div class="contact-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">GitHub</div>
+                    <div class="contact-detail-value">github.com/JeffJeffisawesome</div>
+                  </div>
+                </div>
+                <a href="https://github.com/JeffJeffisawesome" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Explore</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">📍 Chapel Hill, NC</span>
+            <button class="btn btn-outline btn-sm" onclick="window.print()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <span>Print / Save PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Send a Direct Message</h3>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Fill out the form below to quickly formulate an email message.
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Recruiter / Engineering Manager" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Hi Jeffrey, I came across your portfolio and would love to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Compose Email</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-left">
+          <div style="font-weight: 800; font-size: 1.1rem; color: var(--text-primary);">Jeffrey Zhu</div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Computer Science & Applied Mathematics • UNC-Chapel Hill Graduate</p>
+        </div>
+
+        <div class="footer-right">
+          <a href="#hero" class="btn btn-secondary btn-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            <span>Back to Top</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025-2026 Jeffrey Zhu. Built with semantic HTML5, CSS3 & JavaScript. Hosted with pride for Carolina Blue.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal 1: Cryptography Architecture Deep-Dive -->
+  <div id="modal-crypto" class="modal-overlay">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <span class="badge badge-carolina">Protocol Deep-Dive</span>
+      <h3 style="font-size: 1.6rem; margin: 0.5rem 0 1rem 0;">Double-Ratchet Protocol Implementation</h3>
+      <div class="modal-body">
+        <p>The Signal Protocol Double-Ratchet combines a <strong>Diffie-Hellman ratchet</strong> with two <strong>symmetric-key KDF chains</strong> (sending and receiving chains) to guarantee the highest echelon of secure messaging:</p>
+        
+        <div class="modal-code-block">
+# Cryptographic State Structure
+Alice State:
+├── DHs: Ephemeral ECDH Keypair (g^a)
+├── DHr: Bob's Current Public Key (g^b)
+├── RK:  Root Key (32-byte shared secret)
+├── CKs: Sending Chain Key (KDF derived)
+└── CKr: Receiving Chain Key (KDF derived)
+
+On Every Message:
+1. Message Key (MK) = KDF_CK(CKs) -> advances CKs
+2. Ciphertext = AES-256-GCM_Encrypt(MK, Plaintext)
+3. On turn change: RK, CKs = KDF_RK(RK, DH(DHs, DHr)) -> Ratchets forward!
+        </div>
+
+        <p><strong>Post-Compromise Security:</strong> If an attacker compromises Alice's state at message $n$, the adversary can only decipher messages from that specific compromise window. As soon as Bob and Alice exchange the next DH ephemeral key, a completely fresh root key is derived, and the attacker loses all decryption capability.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: AI Study Buddy Architecture Deep-Dive -->
+  <div id="modal-ai" class="modal-overlay">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <span class="badge badge-purple">System Architecture</span>
+      <h3 style="font-size: 1.6rem; margin: 0.5rem 0 1rem 0;">CSXL Study Buddy AI Architecture</h3>
+      <div class="modal-body">
+        <p>The CSXL Study Buddy agent is structured around containerized FastAPI microservices communicating with SQL persistence and OpenAI's API:</p>
+        
+        <div class="modal-code-block">
+[ Angular Frontend ] 
+        ↕ (JWT Authenticated REST / WebSocket)
+[ Red Hat Pod: FastAPI Gateway ]
+        ├── Auth Dependency & Rate Limiter
+        ├── Study Guide Indexer (SQL Vector Embeddings)
+        ├── Socratic Prompt Pipeline (OpenAI API)
+        └── Automated PyTest Unit & Integration Suite
+        </div>
+
+        <p><strong>Key Highlights:</strong> Instructors define boundaries and course rubrics in plain text; the system sanitizes and binds these as high-priority system context, ensuring the AI maintains academic rigor and avoids giving away direct answers without pedagogical guidance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/ratchet-demo.js"></script>
+  <script src="js/ai-study-demo.js"></script>
+</body>
+</html>
