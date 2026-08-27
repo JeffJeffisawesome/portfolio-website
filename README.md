@@ -28,19 +28,6 @@ python3 -m http.server 8000
 
 ---
 
-## 🌐 Deployment Options
-
-### GitHub Pages (Recommended)
-1. Push this repository to your GitHub account (`https://github.com/JeffJeffisawesome/portfolio`).
-2. Go to **Settings** $\rightarrow$ **Pages**.
-3. Under **Branch**, select `main` and `/ (root)`, then click **Save**.
-4. Your website will be live at `https://JeffJeffisawesome.github.io/portfolio/`.
-
-### Vercel / Netlify
-- Drag and drop this folder onto [Netlify Drop](https://app.netlify.com/drop) or import the GitHub repo into [Vercel](https://vercel.com) for instant automatic deployments.
-
----
-
 ## 📁 Project Structure
 
 ```
