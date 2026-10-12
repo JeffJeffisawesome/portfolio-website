@@ -481,73 +481,147 @@
 }
 
 /* ==========================================================================
-   Interactive Widget: Tabber Guitar Practice Simulator
+   Interactive Widget: Tabber Application Preview
    ========================================================================== */
 
-.tabber-sim-box {
+.tabber-mock-window {
   background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 1.15rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.tabber-mock-header {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.55rem 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.mock-window-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mock-window-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.mock-window-dots .dot.red { background: #ef4444; }
+.mock-window-dots .dot.yellow { background: #f59e0b; }
+.mock-window-dots .dot.green { background: #10b981; }
+
+.mock-url-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-amber);
+  font-weight: 600;
+}
+
+.mock-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  color: var(--accent-emerald);
+  font-weight: 600;
+}
+
+.mock-status-pill .status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+
+.tabber-mock-body {
+  padding: 0.95rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.tabber-song-tabs {
+.mock-song-header {
   display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-}
-
-.tab-song-pill {
-  padding: 0.25rem 0.6rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-full);
-  font-size: 0.72rem;
-  cursor: pointer;
-  color: var(--text-secondary);
-  transition: all var(--transition-fast);
-}
-
-.tab-song-pill.active {
-  background: rgba(245, 158, 11, 0.2);
-  border-color: var(--accent-amber);
-  color: #fcd34d;
-  font-weight: 600;
-}
-
-.tabber-meta-strip {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 0.4rem 0.65rem;
-  font-size: 0.72rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mock-song-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.mock-song-artist {
+  font-size: 0.78rem;
   color: var(--text-muted);
 }
 
-.tabber-meta-strip span strong {
-  color: var(--text-primary);
+.mock-song-badges {
+  display: flex;
+  gap: 0.35rem;
 }
 
-.tabber-chord-strip {
+.pill-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.pill-badge.pill-key {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-amber);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.pill-badge.pill-tuning {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.mock-chord-bar {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
   flex-wrap: wrap;
 }
 
-.chord-inspect-label {
+.mock-chord-label {
   font-size: 0.72rem;
   color: var(--text-muted);
   font-weight: 600;
 }
 
-.chord-pill-btn {
+.mock-chord-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.mock-chord-btn {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
@@ -555,109 +629,118 @@
   background: var(--bg-tertiary);
   border: 1px solid var(--border-subtle);
   border-radius: 4px;
-  color: var(--accent-amber);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
-.chord-pill-btn:hover,
-.chord-pill-btn.active {
-  background: rgba(245, 158, 11, 0.25);
+.mock-chord-btn:hover {
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+}
+
+.mock-chord-btn.active {
+  background: rgba(245, 158, 11, 0.2);
   border-color: var(--accent-amber);
   color: #fbbf24;
-  box-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.25);
 }
 
-.tabber-interactive-display {
+.mock-display-grid {
   display: grid;
-  grid-template-columns: 1fr 105px;
+  grid-template-columns: 1fr 94px;
   gap: 0.75rem;
-  align-items: stretch;
+  align-items: center;
 }
 
-@media (max-width: 480px) {
-  .tabber-interactive-display {
-    grid-template-columns: 1fr;
-  }
-}
-
-.tabber-lyric-sheet {
+.mock-lyric-box {
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 0.65rem 0.8rem;
+  padding: 0.75rem 0.85rem;
   font-family: var(--font-mono);
-  font-size: 0.74rem;
-  line-height: 1.6;
-  height: 135px;
-  overflow-y: auto;
-  color: var(--text-secondary);
-  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
 }
 
-.tabber-lyric-sheet .tab-chord {
-  color: var(--accent-amber);
+.lyric-row {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.lyric-chords-line {
+  font-size: 0.72rem;
   font-weight: 700;
+  color: var(--accent-amber);
+  white-space: pre;
+}
+
+.chord-badge-pill {
   cursor: pointer;
   padding: 0 2px;
-  border-radius: 3px;
-  background: rgba(245, 158, 11, 0.12);
+  border-radius: 2px;
   transition: all var(--transition-fast);
 }
 
-.tabber-lyric-sheet .tab-chord:hover,
-.tabber-lyric-sheet .tab-chord.highlight {
+.chord-badge-pill:hover,
+.chord-badge-pill.active {
   background: var(--accent-amber);
   color: #111726;
 }
 
-.tabber-lyric-sheet .ascii-tab {
-  color: var(--accent-cyan);
-  font-size: 0.67rem;
-  white-space: pre;
-  display: block;
-  margin-top: 0.35rem;
-  opacity: 0.95;
-  font-family: var(--font-mono);
+.lyric-text-line {
+  font-size: 0.76rem;
+  color: var(--text-primary);
+  white-space: pre-wrap;
 }
 
-.tabber-fretboard-card {
+.mock-fretboard-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 0.4rem;
+  padding: 0.45rem 0.25rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
-.tabber-fretboard-title {
-  font-size: 0.75rem;
+.fretboard-chord-title {
+  font-size: 0.74rem;
   font-weight: 700;
   color: var(--accent-amber);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
   font-family: var(--font-mono);
 }
 
-.tabber-fretboard-svg {
-  width: 98px;
-  height: 104px;
+.fretboard-svg-element {
+  width: 90px;
+  height: 94px;
+  display: block;
 }
 
-.tabber-controls-row {
+.mock-arch-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.4rem 0.65rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  font-size: 0.69rem;
+  font-family: var(--font-mono);
 }
 
-.tabber-action-btn-group {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
+.arch-stat-label {
+  color: var(--text-muted);
+}
+
+.arch-stat-val {
+  color: var(--accent-cyan);
+  font-weight: 600;
 }
 
 /* ==========================================================================

@@ -7,7 +7,7 @@ An interactive, responsive portfolio website showcasing the technical work, educ
 ## 🚀 Features
 
 - **Hero & Metrics**: Highlighting academic honors (3.86 GPA, Dean's List), UNC School of Medicine IT experience, and key engineering domains.
-- **Interactive Tabber Guitar Practice Simulator**: A live in-browser tab reader and dynamic SVG fretboard chord inspector for **Tabber** ([tabber.fyi](https://tabber.fyi)), featuring ChordPro formatting, CAGED chord diagrams, and hands-free auto-scrolling.
+- **Interactive Tabber Chord Inspector**: A live in-browser dynamic SVG fretboard chord inspector for **Tabber** ([tabber.fyi](https://tabber.fyi)), demonstrating ChordPro alignment and CAGED chord voicings.
 - **Interactive Cryptographic Visualizer**: A live in-browser simulation of the **Signal Double-Ratchet Algorithm**, demonstrating Diffie-Hellman ratcheting, symmetric KDF chains, forward secrecy, and post-compromise security recovery.
 - **Interactive AI Study Buddy Sandbox**: A live simulation of the **CSXL OpenAI Study Buddy tool** built with FastAPI and Red Hat Pods architecture.
 - **Work Experience & ETL Flow**: Interactive visualizer of the 4-stage data pipeline developed at **UNC School of Medicine IT** (Ingestion $\rightarrow$ Cleansing $\rightarrow$ SQL/Informatica $\rightarrow$ Tableau Dashboards).
