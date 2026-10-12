@@ -116,7 +116,7 @@
         </p>
 
         <p class="hero-bio">
-          I build high-scale data engineering pipelines, implement resilient cryptographic protocols like Signal's Double-Ratchet, and develop intelligent full-stack AI applications with FastAPI and modern frontend frameworks.
+          I build high-scale data engineering pipelines, deploy modern full-stack web applications (<a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber); font-weight: 600; text-decoration: underline;">tabber.fyi</a>), implement resilient cryptographic protocols like Signal's Double-Ratchet, and develop intelligent AI microservices.
         </p>
 
         <div class="hero-cta-group">
@@ -173,6 +173,16 @@
             <div class="profile-focus-list">
               <div class="focus-item">
                 <div class="focus-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                </div>
+                <div>
+                  <div class="focus-title">Full-Stack Cloud & Music Tech</div>
+                  <div class="focus-sub">Tabber (<a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber); font-weight: 600;">tabber.fyi</a> • React 18, Supabase & AWS Lambda)</div>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                 </div>
                 <div>
@@ -203,10 +213,10 @@
             </div>
 
             <div class="profile-card-footer">
-              <span class="skill-mini-tag">Python</span>
-              <span class="skill-mini-tag">Java</span>
-              <span class="skill-mini-tag">C</span>
+              <span class="skill-mini-tag">React</span>
               <span class="skill-mini-tag">TypeScript</span>
+              <span class="skill-mini-tag">Supabase</span>
+              <span class="skill-mini-tag">Python</span>
               <span class="skill-mini-tag">SQL</span>
               <span class="skill-mini-tag">Informatica</span>
             </div>
@@ -335,11 +345,145 @@
       <div class="section-header">
         <span class="section-tag">Engineering Showcase</span>
         <h2 class="section-title">Featured Projects & Live Demos</h2>
-        <p class="section-subtitle">Hands-on implementations in cryptography, AI agents, microservices, and static documentation platforms.</p>
+        <p class="section-subtitle">Hands-on implementations in full-stack cloud applications, cryptography, AI agents, and microservices.</p>
       </div>
 
       <div class="projects-grid">
-        <!-- Project 1: Double-Ratchet Encrypted Messenger Backend -->
+        <!-- Project 1: Tabber: A Guitar Tab Platform -->
+        <article class="project-card featured-tabber">
+          <div class="project-info">
+            <div>
+              <div class="project-header-top">
+                <span class="badge badge-amber">Full-Stack Cloud & Music Tech</span>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                  <a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="Visit Live Application at tabber.fyi">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <span>tabber.fyi</span>
+                  </a>
+                  <a href="https://github.com/JeffJeffisawesome/tabber" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Source Repository">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>Repo</span>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Tabber: A Guitar Tab Platform</h3>
+              <p class="project-subtitle">Production Full-Stack Web App • React 18, TypeScript, Supabase RLS & AWS Lambda (Sep 2026 – Present)</p>
+              
+              <p class="project-description">
+                Built and launched a modern full-stack guitar tablature web app, chord sheet manager, and interactive practice tool deployed live at <a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber); font-weight: 600; text-decoration: underline;">tabber.fyi</a>. Features multi-device cloud persistence, offline fallback, and an AWS Lambda serverless microservice.
+              </p>
+
+              <ul class="project-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Full-Stack Cloud & Row-Level Security:</strong> Built with React 18, TypeScript, and Supabase using Row-Level Security (RLS) for fine-grained author permissions, OAuth authentication, and instant local storage fallback for offline rehearsal.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Serverless Web Scraping Microservice:</strong> Paired with an AWS Lambda serverless Python microservice to ingest and parse chords/tablature from web sources into structured ChordPro and ASCII staves.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Interactive Practice Engine:</strong> Engineered dynamic SVG fretboard chord voicings across the CAGED system, hands-free variable-speed auto-scrolling, font scaling, and a mobile focus mode allocating ~95% of screen real estate to lyrics.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Vercel</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">OAuth</span>
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">PostgreSQL / RLS</span>
+              </div>
+              
+              <div class="project-footer-actions">
+                <button class="btn btn-outline btn-sm" data-modal-target="modal-tabber">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Architecture Deep-Dive</span>
+                </button>
+                <a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Visit tabber.fyi ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Tabber Practice Visualizer Widget -->
+          <div class="project-preview-panel">
+            <div class="preview-panel-header">
+              <span class="preview-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                Tabber Interactive Player
+              </span>
+              <span class="badge badge-amber">Interactive Demo</span>
+            </div>
+
+            <div class="preview-interactive-body">
+              <div class="tabber-sim-box">
+                <!-- Song selector -->
+                <div class="tabber-song-tabs">
+                  <span class="tab-song-pill active" data-song="country-roads">Country Roads</span>
+                  <span class="tab-song-pill" data-song="wish-you-were-here">Wish You Were Here</span>
+                  <span class="tab-song-pill" data-song="hotel-california">Hotel California</span>
+                </div>
+
+                <!-- Metadata bar -->
+                <div class="tabber-meta-strip">
+                  <span>Key: <strong id="tabber-meta-key">G</strong></span>
+                  <span>Capo: <strong id="tabber-meta-capo">2nd Fret</strong></span>
+                  <span>Tuning: <strong id="tabber-meta-tuning">Standard</strong></span>
+                </div>
+
+                <!-- Chord inspector bar -->
+                <div class="tabber-chord-strip">
+                  <span class="chord-inspect-label">Inspect Chord:</span>
+                  <div id="tabber-chords-list" style="display: flex; gap: 0.35rem; flex-wrap: wrap;"></div>
+                </div>
+
+                <!-- Interactive view (Lyrics/Tab + SVG Fretboard) -->
+                <div class="tabber-interactive-display">
+                  <div id="tabber-lyric-sheet" class="tabber-lyric-sheet"></div>
+                  
+                  <div class="tabber-fretboard-card">
+                    <div id="tabber-chord-name" class="tabber-fretboard-title">G</div>
+                    <svg id="tabber-fretboard-svg" class="tabber-fretboard-svg" viewBox="0 0 98 110"></svg>
+                  </div>
+                </div>
+
+                <!-- Controls: Auto-scroll, Speed, Transpose -->
+                <div class="tabber-controls-row">
+                  <div class="tabber-action-btn-group">
+                    <button id="tabber-scroll-toggle-btn" class="btn btn-primary btn-sm">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      Auto-Scroll
+                    </button>
+                    <button id="tabber-speed-toggle-btn" class="btn btn-secondary btn-sm" title="Toggle scroll speed">
+                      1x
+                    </button>
+                    <button id="tabber-reset-scroll-btn" class="btn btn-secondary btn-sm" title="Reset scroll position">
+                      ↺
+                    </button>
+                  </div>
+
+                  <div class="tabber-action-btn-group">
+                    <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">Key:</span>
+                    <button id="tabber-transpose-down" class="btn btn-secondary btn-sm" title="Transpose -1 Semitone">♭ -1</button>
+                    <button id="tabber-transpose-up" class="btn btn-secondary btn-sm" title="Transpose +1 Semitone">♯ +1</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Double-Ratchet Encrypted Messenger Backend -->
         <article class="project-card featured-crypto">
           <div class="project-info">
             <div>
@@ -826,6 +970,7 @@
               <span class="skill-pill">Python</span>
               <span class="skill-pill">Java</span>
               <span class="skill-pill">C</span>
+              <span class="skill-pill">Go</span>
               <span class="skill-pill">TypeScript</span>
               <span class="skill-pill">JavaScript</span>
               <span class="skill-pill">SQL</span>
@@ -845,9 +990,11 @@
               <h3 class="skill-cat-title">Backend & Web Frameworks</h3>
             </div>
             <div class="skills-badge-list">
+              <span class="skill-pill">React 18</span>
+              <span class="skill-pill">Supabase</span>
               <span class="skill-pill">FastAPI</span>
               <span class="skill-pill">Node.js</span>
-              <span class="skill-pill">React</span>
+              <span class="skill-pill">Vite</span>
               <span class="skill-pill">Angular</span>
               <span class="skill-pill">REST APIs</span>
               <span class="skill-pill">PyTest</span>
@@ -865,6 +1012,9 @@
               <h3 class="skill-cat-title">Data & Cloud Infrastructure</h3>
             </div>
             <div class="skills-badge-list">
+              <span class="skill-pill">AWS Lambda</span>
+              <span class="skill-pill">Vercel</span>
+              <span class="skill-pill">PostgreSQL / RLS</span>
               <span class="skill-pill">Docker</span>
               <span class="skill-pill">Red Hat Pods</span>
               <span class="skill-pill">Informatica</span>
@@ -886,6 +1036,7 @@
             </div>
             <div class="skills-badge-list">
               <span class="skill-pill">Double-Ratchet Cryptography</span>
+              <span class="skill-pill">Full-Stack Cloud Architecture</span>
               <span class="skill-pill">ETL Pipeline Engineering</span>
               <span class="skill-pill">AI Prompting & LLM Integration</span>
               <span class="skill-pill">Agile / Scrum Methodologies</span>
@@ -1098,9 +1249,55 @@ On Every Message:
     </div>
   </div>
 
+  <!-- Modal 3: Tabber Architecture Deep-Dive -->
+  <div id="modal-tabber" class="modal-overlay">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <span class="badge badge-amber">Full-Stack Cloud Architecture</span>
+      <h3 style="font-size: 1.6rem; margin: 0.5rem 0 1rem 0;">Tabber: Guitar Tab Platform System Architecture</h3>
+      <div class="modal-body">
+        <p><strong>Tabber</strong> (<a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber); text-decoration: underline; font-weight: 600;">tabber.fyi</a>) is architected as a high-performance, client-first React 18 SPA coupled with Supabase cloud infrastructure and an asynchronous serverless web scraping pipeline:</p>
+        
+        <div class="modal-code-block">
+[ Client Tier: React 18 + TypeScript + Vite ]  (Deployed on Vercel)
+        ├── Dynamic SVG Fretboard & CAGED System Engine
+        ├── ChordPro Syntax Parser & Monospace Tab Align Engine
+        ├── Hands-Free Variable Auto-Scroller & Focus Mode
+        ↕ (Supabase Client SDK / OAuth Bearer Tokens)
+[ Data Tier: Supabase Cloud (PostgreSQL + Realtime) ]
+        ├── PostgreSQL Relational Schemas (tabs, users, collections)
+        ├── Row-Level Security (RLS) Policies (Author-only write / Public read)
+        ├── Multi-Device Realtime Subscriptions
+        └── Offline-First Resilience (Automatic LocalStorage fallback)
+        ↕
+[ Serverless Worker: AWS Lambda (Python Microservice) ]
+        ├── Tab Extraction & HTML/Text Web Scraper
+        ├── Inconsistent Formatting Normalizer -> ChordPro Engine
+        └── Metadata Extractor (Tuning, Capo, Transposition, Key)
+        </div>
+
+        <p><strong>Security & Permissions (Row-Level Security):</strong> Tabber leverages PostgreSQL Row-Level Security (RLS) directly through Supabase authentication tokens. Unauthenticated guests can search, read, and transpose tabs or work in offline mode; authenticated users can draft, publish, and edit their songs, while RLS database policies strictly prevent unauthorized modification of other musicians' submissions.</p>
+
+        <p><strong>Serverless Scraping Microservice:</strong> When importing external tablature, an event-driven AWS Lambda microservice cleans raw unaligned chords, identifies guitar tunings, and normalizes them into structured ChordPro markup for seamless responsive rendering across mobile and desktop devices.</p>
+        
+        <div style="margin-top: 0.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a href="https://tabber.fyi" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <span>Open tabber.fyi</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <a href="https://github.com/JeffJeffisawesome/tabber" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+            <span>View GitHub Repository</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script src="js/app.js"></script>
   <script src="js/ratchet-demo.js"></script>
   <script src="js/ai-study-demo.js"></script>
+  <script src="js/tabber-demo.js"></script>
 </body>
 </html>
