@@ -384,7 +384,7 @@
                 </li>
                 <li>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Interactive Practice Engine:</strong> Engineered dynamic SVG fretboard chord voicings across the CAGED system, hands-free variable-speed auto-scrolling, font scaling, and a mobile focus mode allocating ~95% of screen real estate to lyrics.</span>
+                  <span><strong>Interactive Chord & Tab Engine:</strong> Monospace tablature alignment, dynamic SVG fretboard chord voicings across the CAGED system, and distraction-free tab reading.</span>
                 </li>
               </ul>
             </div>
@@ -415,67 +415,83 @@
             </div>
           </div>
 
-          <!-- Interactive Tabber Practice Visualizer Widget -->
+          <!-- Interactive Tabber Chord Visualizer Widget -->
           <div class="project-preview-panel">
             <div class="preview-panel-header">
               <span class="preview-title">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                Tabber Interactive Player
+                Tabber Application Preview
               </span>
               <span class="badge badge-amber">Interactive Demo</span>
             </div>
 
             <div class="preview-interactive-body">
-              <div class="tabber-sim-box">
-                <!-- Song selector -->
-                <div class="tabber-song-tabs">
-                  <span class="tab-song-pill active" data-song="country-roads">Country Roads</span>
-                  <span class="tab-song-pill" data-song="wish-you-were-here">Wish You Were Here</span>
-                  <span class="tab-song-pill" data-song="hotel-california">Hotel California</span>
-                </div>
-
-                <!-- Metadata bar -->
-                <div class="tabber-meta-strip">
-                  <span>Key: <strong id="tabber-meta-key">G</strong></span>
-                  <span>Capo: <strong id="tabber-meta-capo">2nd Fret</strong></span>
-                  <span>Tuning: <strong id="tabber-meta-tuning">Standard</strong></span>
-                </div>
-
-                <!-- Chord inspector bar -->
-                <div class="tabber-chord-strip">
-                  <span class="chord-inspect-label">Inspect Chord:</span>
-                  <div id="tabber-chords-list" style="display: flex; gap: 0.35rem; flex-wrap: wrap;"></div>
-                </div>
-
-                <!-- Interactive view (Lyrics/Tab + SVG Fretboard) -->
-                <div class="tabber-interactive-display">
-                  <div id="tabber-lyric-sheet" class="tabber-lyric-sheet"></div>
-                  
-                  <div class="tabber-fretboard-card">
-                    <div id="tabber-chord-name" class="tabber-fretboard-title">G</div>
-                    <svg id="tabber-fretboard-svg" class="tabber-fretboard-svg" viewBox="0 0 98 110"></svg>
+              <div class="tabber-mock-window">
+                <!-- Mock Browser / App Titlebar -->
+                <div class="tabber-mock-header">
+                  <div class="mock-window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="mock-url-pill">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <span>tabber.fyi</span>
+                  </div>
+                  <div class="mock-status-pill">
+                    <span class="status-dot"></span>
+                    <span>Live</span>
                   </div>
                 </div>
 
-                <!-- Controls: Auto-scroll, Speed, Transpose -->
-                <div class="tabber-controls-row">
-                  <div class="tabber-action-btn-group">
-                    <button id="tabber-scroll-toggle-btn" class="btn btn-primary btn-sm">
-                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                      Auto-Scroll
-                    </button>
-                    <button id="tabber-speed-toggle-btn" class="btn btn-secondary btn-sm" title="Toggle scroll speed">
-                      1x
-                    </button>
-                    <button id="tabber-reset-scroll-btn" class="btn btn-secondary btn-sm" title="Reset scroll position">
-                      ↺
-                    </button>
+                <!-- Mock App Body -->
+                <div class="tabber-mock-body">
+                  <div class="mock-song-header">
+                    <div>
+                      <div class="mock-song-title">Wish You Were Here</div>
+                      <div class="mock-song-artist">Pink Floyd</div>
+                    </div>
+                    <div class="mock-song-badges">
+                      <span class="pill-badge pill-key">Key of G</span>
+                      <span class="pill-badge pill-tuning">Standard</span>
+                    </div>
                   </div>
 
-                  <div class="tabber-action-btn-group">
-                    <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">Key:</span>
-                    <button id="tabber-transpose-down" class="btn btn-secondary btn-sm" title="Transpose -1 Semitone">♭ -1</button>
-                    <button id="tabber-transpose-up" class="btn btn-secondary btn-sm" title="Transpose +1 Semitone">♯ +1</button>
+                  <!-- Interactive Chord Selector -->
+                  <div class="mock-chord-bar">
+                    <span class="mock-chord-label">Voicings:</span>
+                    <div class="mock-chord-pills">
+                      <button class="mock-chord-btn active" data-chord="G">G</button>
+                      <button class="mock-chord-btn" data-chord="C">C</button>
+                      <button class="mock-chord-btn" data-chord="D">D</button>
+                      <button class="mock-chord-btn" data-chord="Am">Am</button>
+                      <button class="mock-chord-btn" data-chord="Em7">Em7</button>
+                    </div>
+                  </div>
+
+                  <!-- Split: Lyrics + SVG Fretboard -->
+                  <div class="mock-display-grid">
+                    <div class="mock-lyric-box">
+                      <div class="lyric-row">
+                        <div class="lyric-chords-line"><span class="chord-badge-pill" data-chord="C">[C]</span>                   <span class="chord-badge-pill" data-chord="D">[D]</span></div>
+                        <div class="lyric-text-line">How I wish, how I wish you were here</div>
+                      </div>
+                      <div class="lyric-row">
+                        <div class="lyric-chords-line">           <span class="chord-badge-pill" data-chord="Am">[Am]</span>                          <span class="chord-badge-pill active" data-chord="G">[G]</span></div>
+                        <div class="lyric-text-line">We're just two lost souls in a bowl</div>
+                      </div>
+                    </div>
+
+                    <div class="mock-fretboard-card">
+                      <div id="tabber-fretboard-name" class="fretboard-chord-title">G Major</div>
+                      <svg id="tabber-chord-svg" class="fretboard-svg-element" viewBox="0 0 98 96"></svg>
+                    </div>
+                  </div>
+
+                  <!-- Engineering Architecture Status Bar -->
+                  <div class="mock-arch-footer">
+                    <div><span class="arch-stat-label">DB:</span> <span class="arch-stat-val">Supabase (RLS)</span></div>
+                    <div><span class="arch-stat-label">Worker:</span> <span class="arch-stat-val">AWS Lambda</span></div>
                   </div>
                 </div>
               </div>
